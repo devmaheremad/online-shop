@@ -29,4 +29,16 @@
 			border-bottom-right-radius: 8px;
 		}
 	}
+	&__result {
+		width: 180px;
+		height: 180px;
+	}
+	.nav-pills-reviews {
+		.nav-link.active {
+			border: 1px solid $info !important;
+			color: $info !important;
+		}
+	}
+	.reviewBox{
+	}
 }
