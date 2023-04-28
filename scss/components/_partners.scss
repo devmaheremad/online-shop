@@ -1,0 +1,10 @@
+.partners {
+	.partnersSwiper {
+		@media (min-width: 767px) {
+			width: 86%;
+		}
+		&__box {
+			width: 144px;
+		}
+	}
+}
