@@ -1,0 +1,238 @@
+body {
+	overflow-x: hidden;
+	background: url("../imgs/bg_final.webp") center center no-repeat;
+	background-color: #000618 !important;
+	background-size: cover;
+}
+.mainContent {
+	min-height: 100vh;
+}
+*:not(i) {
+	font-family: "Vazirmatn", sans-serif !important;
+	font-weight: 400;
+}
+
+.pt-2px {
+	padding-top: 2px;
+}
+.pt-4px {
+	padding-top: 4px !important;
+}
+.mb-2px {
+	margin-bottom: 2px;
+}
+.mb-4px {
+	margin-bottom: 4px !important;
+}
+.ml-5px {
+	margin-right: 5px;
+}
+.mr-5px {
+	margin-left: 5px;
+}
+.ml-7px {
+	margin-right: 7px;
+}
+.mr-7px {
+	margin-left: 7px;
+}
+.ml-10px {
+	margin-right: 10px;
+}
+.mr-10px {
+	margin-left: 10px;
+}
+.text-justify {
+	text-align: justify;
+}
+
+a.disabled {
+	cursor: not-allowed;
+}
+.containerEdit {
+	max-width: 95% !important;
+}
+.containerEdit-mealDetails {
+	max-width: 95% !important;
+}
+
+.rounded-5px {
+	border-radius: 5px !important;
+}
+.rounded-9px {
+	border-radius: 9px !important;
+}
+.rounded-10px {
+	border-radius: 10px !important;
+}
+.rounded-18px {
+	border-radius: 18px !important;
+}
+.rounded-20px {
+	border-radius: 20px !important;
+}
+.rounded-25px {
+	border-radius: 25px !important;
+}
+.socialsSvg {
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		transform: translateY(-5px);
+	}
+}
+
+.packages__desc {
+	max-width: 700px;
+}
+
+.btn-shadow {
+	box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 10%);
+}
+.card-shadow {
+	box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.06),
+		0px 10px 15px 0px rgba(0, 0, 0, 0.03) !important;
+}
+
+.card-overlay {
+	background-color: #0000006e;
+	backdrop-filter: blur(8px);
+	transition: all 0.3s ease-in-out !important;
+}
+
+.w-max-content {
+	width: max-content;
+}
+
+.direction-initial {
+	direction: initial;
+}
+.direction-rtl {
+	direction: rtl;
+}
+.direction-ltr {
+	direction: ltr;
+}
+.letter-spacing-6px {
+	letter-spacing: 6px;
+}
+
+.borderEdit {
+	overflow: hidden;
+	background-color: #0000006e;
+	transition: all 0.3s ease-in-out;
+	&::after {
+		transition: all 0.3s ease-in-out;
+		position: absolute;
+		display: block;
+		content: "";
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 0;
+		border-radius: 25px;
+		background: rgb(207, 21, 165);
+		background: linear-gradient(
+			90deg,
+			rgba(207, 21, 165, 0) 0%,
+			rgb(207, 21, 165) 5%,
+			rgb(207 21 165 / 10%) 68%
+		);
+	}
+	&::before {
+		transition: all 0.3s ease-in-out;
+		position: absolute;
+		display: block;
+		content: "";
+		width: 2px;
+		height: 100%;
+		right: 0;
+		top: 0;
+		border-radius: 25px;
+		background: rgb(207, 21, 165);
+		background: linear-gradient(
+			0deg,
+			rgba(207, 21, 165, 0) 0%,
+			rgba(207, 21, 165, 1) 5%,
+			rgba(207, 21, 165, 0) 75%
+		);
+	}
+	&:hover {
+		border-left: 2px solid $secondary !important;
+		border-bottom: 2px solid $secondary !important;
+		&::before {
+			z-index: 5;
+			background: #17dd3a;
+			background: linear-gradient(
+				0deg,
+				#17dd3a00 0%,
+				#17dd3a 5%,
+				#17dd3a00 75%
+			);
+		}
+		&::after {
+			z-index: 5;
+			background: #17dd3a;
+			background: linear-gradient(
+				90deg,
+				#17dd3a00 0%,
+				#17dd3a 5%,
+				#17dd3a1a 68%
+			);
+		}
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	.containerEdit {
+		max-width: 92% !important;
+	}
+	.containerEdit-mealDetails {
+		max-width: 92% !important;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.containerEdit {
+		max-width: 90% !important;
+	}
+	.containerEdit-mealDetails {
+		max-width: 90% !important;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.containerEdit {
+		max-width: 88% !important;
+	}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.containerEdit {
+		max-width: 86% !important;
+	}
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+	.containerEdit {
+		max-width: 1300px !important;
+	}
+}
+
+.up-down-box {
+	animation: up-down 2s ease-in-out infinite;
+}
+
+@keyframes up-down {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-15px);
+	}
+}

@@ -1,0 +1,21 @@
+.mainNavbar {
+	&__link {
+		width: 51.07px;
+		height: 52.24px;
+		@media (max-width: 576px) {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	&__logo {
+		img {
+			@media (max-width: 576px) {
+				width: 150px;
+			}
+		}
+	}
+}
+
+.scrolled {
+	backdrop-filter: blur(10px);
+}

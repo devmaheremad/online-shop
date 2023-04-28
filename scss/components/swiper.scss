@@ -1,0 +1,13 @@
+@import "../assets/variables";
+$themeColor: $primary;
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+	right: var(--swiper-navigation-sides-offset, -2px);
+	left: auto;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	left: var(--swiper-navigation-sides-offset, -2px);
+	right: auto;
+}
+@import "../../node_modules/swiper/swiper.scss";
