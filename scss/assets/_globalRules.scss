@@ -1,5 +1,6 @@
 body {
 	overflow-x: hidden;
+	height: 8000px;
 }
 .mainContent {
 	min-height: 100vh;
@@ -10,6 +11,9 @@ body {
 	font-weight: 400;
 }
 
+.h-1px {
+	height: 1px !important;
+}
 .pt-2px {
 	padding-top: 2px;
 }
@@ -57,6 +61,9 @@ body {
 .rounded-10px {
 	border-radius: 10px !important;
 }
+.rounded-12px {
+	border-radius: 12px !important;
+}
 .rounded-18px {
 	border-radius: 18px !important;
 }
@@ -73,6 +80,10 @@ body {
 .card-shadow {
 	box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.06),
 		0px 10px 15px 0px rgba(0, 0, 0, 0.03) !important;
+}
+
+.cursor-pointer {
+	cursor: pointer;
 }
 
 .card-overlay {
@@ -98,10 +109,17 @@ body {
 	letter-spacing: 6px;
 }
 
-.cart__offcanvas,
-.mainNavbar__offcanvas {
+.cart__offcanvas {
 	width: 570px !important;
 	max-width: 90% !important;
+}
+.mainNavbar__offcanvas {
+	@media (max-width: 992px) {
+		max-width: 90% !important;
+	}
+	@media (min-width: 992px) {
+		width: 570px !important;
+	}
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -150,4 +168,14 @@ body {
 	50% {
 		transform: translateY(-15px);
 	}
+}
+
+// stylling
+.btn-primary {
+	--bs-btn-color: #fff !important;
+	--bs-btn-hover-color: #fff !important;
+}
+.btn:hover {
+	--bs-btn-color: #fff !important;
+	--bs-btn-hover-color: #fff !important;
 }
