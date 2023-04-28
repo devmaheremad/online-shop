@@ -39,6 +39,21 @@
 			color: $info !important;
 		}
 	}
-	.reviewBox{
+}
+
+.relatedProduct {
+	.relatedBox {
+		&__img {
+			width: 250px;
+			height: 220px;
+		}
+	}
+	&__svg {
+		path {
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover path {
+			fill: $primary;
+		}
 	}
 }
