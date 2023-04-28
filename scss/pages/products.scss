@@ -28,6 +28,8 @@
 @import "../../node_modules/bootstrap/scss/offcanvas";
 @import "../../node_modules/bootstrap/scss/badge";
 @import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/dropdown";
 @import "../../node_modules/bootstrap/scss/forms/form-text";
 @import "../../node_modules/bootstrap/scss/forms/form-control";
 @import "../../node_modules/bootstrap/scss/forms/floating-labels";
@@ -42,6 +44,6 @@
 // Then add additional custom code here
 
 // Own components
-// @import "../components/hero";
+@import "../components/navbar";
 
 // Custom styling
