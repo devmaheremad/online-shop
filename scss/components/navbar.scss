@@ -1,18 +1,22 @@
+@import "../assets/variables";
 .mainNavbar {
+	min-height: 88px;
 	&__link {
-		width: 51.07px;
-		height: 52.24px;
-		@media (max-width: 576px) {
-			width: 35px;
-			height: 35px;
+		border-bottom: 3px solid transparent;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			color: $primary !important;
 		}
 	}
-	&__logo {
-		img {
-			@media (max-width: 576px) {
-				width: 150px;
-			}
+	&__link.active {
+		color: $primary !important;
+		@media (min-width: 992px) {
+			border-bottom: 3px solid $primary;
+			font-weight: 700;
 		}
+	}
+	.dropdown-menu__settings {
+		min-width: 112px;
 	}
 }
 

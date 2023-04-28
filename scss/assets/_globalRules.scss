@@ -3,6 +3,7 @@ body {
 }
 .mainContent {
 	min-height: 100vh;
+	padding-top: 88px;
 }
 *:not(i) {
 	font-family: "Poppins", sans-serif !important;
@@ -97,6 +98,12 @@ body {
 	letter-spacing: 6px;
 }
 
+.cart__offcanvas,
+.mainNavbar__offcanvas {
+	width: 570px !important;
+	max-width: 90% !important;
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 	.containerEdit {
@@ -121,13 +128,6 @@ body {
 @media (min-width: 992px) {
 	.containerEdit {
 		max-width: 88% !important;
-	}
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-	.containerEdit {
-		max-width: 86% !important;
 	}
 }
 
