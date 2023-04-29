@@ -143,7 +143,7 @@
 						<div
 							class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center"
 						>
-							<a class="d-none d-lg-block" href="./index.html">
+							<a class="d-none d-lg-block" href="./index.html" aria-label="go to home page">
 								<svg
 									width="170"
 									height="19"
@@ -226,6 +226,7 @@
 										class="border-0 bg-transparent p-0"
 										data-bs-toggle="modal"
 										data-bs-target="#searchingModal"
+										aria-labelledby="forSearching"
 									>
 										<svg
 											width="27"
@@ -249,6 +250,7 @@
 										data-bs-toggle="offcanvas"
 										data-bs-target="#offcanvasCart"
 										aria-controls="offcanvasCart"
+										aria-labelledby="forCart"
 									>
 										<svg
 											width="27"
@@ -272,6 +274,7 @@
 											type="button"
 											data-bs-toggle="dropdown"
 											aria-expanded="false"
+											aria-labelledby="forSettings"
 										>
 											<svg
 												width="26"
@@ -393,7 +396,7 @@
 							<div class="d-flex flex-wrap gap-30 align-items-center">
 								<p class="text-black fw-medium mb-0">Share</p>
 								<a
-									href="#"
+									href="#" aria-label="Social media links"
 									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
 								>
 									<svg
@@ -410,7 +413,7 @@
 									</svg>
 								</a>
 								<a
-									href="#"
+									href="#" aria-label="Social media links"
 									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
 								>
 									<svg
@@ -427,7 +430,7 @@
 									</svg>
 								</a>
 								<a
-									href="#"
+									href="#" aria-label="Social media links"
 									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
 								>
 									<svg
@@ -444,7 +447,7 @@
 									</svg>
 								</a>
 								<a
-									href="#"
+									href="#" aria-label="Social media links"
 									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
 								>
 									<svg
@@ -461,7 +464,7 @@
 									</svg>
 								</a>
 								<a
-									href="#"
+									href="#" aria-label="Social media links"
 									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
 								>
 									<svg
@@ -705,7 +708,7 @@
 										-
 									</button>
 									<input
-										class="count border-0 shadow-none text-primary fw-bold text-center fs-20px"
+										class="count border-0 shadow-none text-primary fw-bold text-center fs-20px" value="1"
 									/>
 									<button
 										type="button"
@@ -2971,7 +2974,8 @@
 				</div>
 			</section>
 			<section
-				class="features container containerEdit mx-auto mt-150 position-relative" data-aos="fade-up"
+				class="features container containerEdit mx-auto mt-150 position-relative"
+				data-aos="fade-up"
 			>
 				<div class="swiper featuresSwiper">
 					<div class="swiper-wrapper pt-30 justify-content-lg-center">
@@ -3104,7 +3108,8 @@
 					</div>
 				</div>
 			</section>
-			<section data-aos="fade-up"
+			<section
+				data-aos="fade-up"
 				class="partners container containerEdit mx-auto mt-150 position-relative"
 			>
 				<div class="swiper partnersSwiper mx-auto">
@@ -3790,7 +3795,6 @@
 
 				// Set the initial count to 0
 				let countValue = 1;
-				count.value = countValue;
 
 				// Add event listener to plus button
 				plusBtn.addEventListener("click", () => {
