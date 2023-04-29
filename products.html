@@ -226,7 +226,7 @@
 										class="border-0 bg-transparent p-0"
 										data-bs-toggle="modal"
 										data-bs-target="#searchingModal"
-										aria-labelledby="forSearching"
+										aria-labelledby="forSearching" title="Search"
 									>
 										<svg
 											width="27"
@@ -250,7 +250,7 @@
 										data-bs-toggle="offcanvas"
 										data-bs-target="#offcanvasCart"
 										aria-controls="offcanvasCart"
-										aria-labelledby="forCart"
+										aria-labelledby="forCart" title="Cart"
 									>
 										<svg
 											width="27"
@@ -274,7 +274,7 @@
 											type="button"
 											data-bs-toggle="dropdown"
 											aria-expanded="false"
-											aria-labelledby="forSettings"
+											aria-labelledby="forSettings" title="Settings"
 										>
 											<svg
 												width="26"
@@ -707,9 +707,10 @@
 									>
 										-
 									</button>
-									<input
+									<input id="count"
 										class="count border-0 shadow-none text-primary fw-bold text-center fs-20px" value="1"
 									/>
+									<label class="visually-hidden" for="count"></label>
 									<button
 										type="button"
 										class="position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent text-gray-300 plus"
