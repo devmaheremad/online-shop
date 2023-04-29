@@ -1,5 +1,6 @@
-body {
-	overflow-x: hidden;
+body,
+html {
+	overflow: hidden;
 }
 .mainContent {
 	min-height: 100vh;
