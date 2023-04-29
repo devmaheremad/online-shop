@@ -1,14 +1,14 @@
 @import "../assets/variables";
 $themeColor: #000;
 @at-root {
-  :root {
-    --swiper-navigation-size: 20px;
-    /*
+	:root {
+		--swiper-navigation-size: 20px;
+		/*
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 10px;
   --swiper-navigation-color: var(--swiper-theme-color);
   */
-  }
+	}
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {

@@ -48,15 +48,15 @@
 		height: calc(100% / 4);
 		width: 100% !important;
 	}
-	.productMainSwiper__prev{
+	.productMainSwiper__prev {
 		top: 3% !important;
-    left: 50%;
-    transform: translateX(-50%) rotate(90deg);
+		left: 50%;
+		transform: translateX(-50%) rotate(90deg);
 	}
-	.productMainSwiper__next{
+	.productMainSwiper__next {
 		top: 97% !important;
-    left: 50%;
-    transform: translateX(-50%) rotate(90deg);
+		left: 50%;
+		transform: translateX(-50%) rotate(90deg);
 	}
 	.productMainSwiper__prev,
 	.productMainSwiper__next {
