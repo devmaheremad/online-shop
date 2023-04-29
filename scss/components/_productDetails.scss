@@ -16,4 +16,56 @@
 			outline: none;
 		}
 	}
+	.shareBox {
+		width: 60px;
+		height: 60px;
+	}
+	.shareBox:first-of-type {
+		background-color: rgba(93, 157, 177, 0.15);
+	}
+	.shareBox:nth-of-type(2) {
+		background-color: rgba(83, 209, 226, 0.15);
+	}
+	.shareBox:nth-of-type(3) {
+		background-color: rgba(67, 145, 218, 0.15);
+	}
+	.shareBox:nth-of-type(4) {
+		background-color: rgba(57, 177, 55, 0.15);
+	}
+	.shareBox:last-of-type {
+		background-color: rgba(255, 112, 32, 0.15);
+	}
+}
+
+.productMainSwiper {
+	.swiper-wrapper {
+		height: 420px;
+	}
+}
+.productMainThumbsSwiper {
+	// height: 90% !important;
+	.swiper-slide {
+		height: calc(100% / 4);
+		width: 100% !important;
+	}
+	.productMainSwiper__prev{
+		top: 3% !important;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+	}
+	.productMainSwiper__next{
+		top: 97% !important;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+	}
+	.productMainSwiper__prev,
+	.productMainSwiper__next {
+		color: $primary;
+		opacity: 1 !important;
+	}
+	.swiper-button-disabled {
+		&:after {
+			color: #949494;
+		}
+	}
 }

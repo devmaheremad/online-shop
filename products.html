@@ -36,6 +36,10 @@
 		<link rel="stylesheet" href="./css/aos.min.css" />
 		<!-- Swiper navigation css -->
 		<link rel="stylesheet" href="./css/swiper-navigation.min.css" />
+		<!-- Swiper free-mode css -->
+		<link rel="stylesheet" href="./css/swiper-free-mode.min.css" />
+		<!-- Swiper thumbs css -->
+		<link rel="stylesheet" href="./css/swiper-thumbs.min.css" />
 		<!-- Swiper css -->
 		<link rel="stylesheet" href="./css/swiper.min.css" />
 	</head>
@@ -309,10 +313,174 @@
 		<main class="mainContent">
 			<section class="productDetails container containerEdit mx-auto mt-80">
 				<div class="row">
-					<div class="col-12 col-xl-6">
-						<h1>test</h1>
+					<div
+						class="col-12 col-xl-6"
+						data-aos="fade-right"
+						data-aos-delay="300"
+					>
+						<div class="row">
+							<div class="col-10">
+								<div class="swiper productMainSwiper position-relative">
+									<div class="swiper-wrapper bg-f6 rounded-8px">
+										<div
+											class="swiper-slide d-flex justify-content-center align-items-center"
+										>
+											<img
+												src="./imgs/product-lg-1.webp"
+												alt="product-lg-img"
+											/>
+										</div>
+										<div
+											class="swiper-slide d-flex justify-content-center align-items-center"
+										>
+											<img
+												src="./imgs/product-lg-1.webp"
+												alt="product-lg-img"
+											/>
+										</div>
+										<div
+											class="swiper-slide d-flex justify-content-center align-items-center"
+										>
+											<img
+												src="./imgs/product-lg-1.webp"
+												alt="product-lg-img"
+											/>
+										</div>
+										<div
+											class="swiper-slide d-flex justify-content-center align-items-center"
+										>
+											<img
+												src="./imgs/product-lg-1.webp"
+												alt="product-lg-img"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<div
+									thumbsSlider=""
+									class="swiper productMainThumbsSwiper position-relative w-100 h-100 py-50"
+								>
+									<div class="swiper-wrapper justify-content-between">
+										<div
+											class="swiper-slide d-flex cursor-pointer bg-f6 justify-content-center align-items-center rounded-8px mb-0"
+										>
+											<img src="./imgs/product-sm-1.png" alt="product-sm-img" />
+										</div>
+										<div
+											class="swiper-slide d-flex cursor-pointer bg-f6 justify-content-center align-items-center rounded-8px mb-0"
+										>
+											<img src="./imgs/product-sm-2.png" alt="product-sm-img" />
+										</div>
+										<div
+											class="swiper-slide d-flex cursor-pointer bg-f6 justify-content-center align-items-center rounded-8px mb-0"
+										>
+											<img src="./imgs/product-sm-3.png" alt="product-sm-img" />
+										</div>
+										<div
+											class="swiper-slide d-flex cursor-pointer bg-f6 justify-content-center align-items-center rounded-8px mb-0"
+										>
+											<img src="./imgs/product-sm-4.png" alt="product-sm-img" />
+										</div>
+									</div>
+									<div class="swiper-button-next productMainSwiper__next"></div>
+									<div class="swiper-button-prev productMainSwiper__prev"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row mt-25">
+							<div class="d-flex flex-wrap gap-30 align-items-center">
+								<p class="text-black fw-medium mb-0">Share</p>
+								<a
+									href="#"
+									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
+								>
+									<svg
+										width="21"
+										height="20"
+										viewBox="0 0 21 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M18.6174 0H1.47007C0.684352 0 0.0459595 0.647322 0.0459595 1.44196V18.558C0.0459595 19.3527 0.684352 20 1.47007 20H18.6174C19.4031 20 20.046 19.3527 20.046 18.558V1.44196C20.046 0.647322 19.4031 0 18.6174 0ZM6.0906 17.1429H3.12632V7.59821H6.09507V17.1429H6.0906ZM4.60846 6.29464C3.65757 6.29464 2.88971 5.52232 2.88971 4.57589C2.88971 3.62946 3.65757 2.85714 4.60846 2.85714C5.55489 2.85714 6.32721 3.62946 6.32721 4.57589C6.32721 5.52679 5.55935 6.29464 4.60846 6.29464ZM17.2022 17.1429H14.2379V12.5C14.2379 11.3929 14.2156 9.96875 12.6977 9.96875C11.1531 9.96875 10.9165 11.1741 10.9165 12.4196V17.1429H7.95221V7.59821H10.796V8.90178H10.8361C11.2335 8.15178 12.2022 7.36161 13.6442 7.36161C16.6442 7.36161 17.2022 9.33928 17.2022 11.9107V17.1429Z"
+											fill="#5D9DB1"
+										/>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
+								>
+									<svg
+										width="23"
+										height="20"
+										viewBox="0 0 23 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M19.7846 4.98436C19.7986 5.2031 19.7986 5.42188 19.7986 5.64062C19.7986 12.3125 15.2618 20 6.96984 20C4.41525 20 2.04217 19.1718 0.0459595 17.7344C0.408918 17.7812 0.757868 17.7969 1.13479 17.7969C3.24263 17.7969 5.18302 17 6.73252 15.6406C4.75028 15.5938 3.0891 14.1406 2.51676 12.1406C2.79597 12.1875 3.07514 12.2187 3.36832 12.2187C3.77313 12.2187 4.17798 12.1562 4.55486 12.0469C2.48887 11.5781 0.939326 9.54687 0.939326 7.09374V7.03126C1.53956 7.40627 2.23759 7.64064 2.97739 7.67185C1.76291 6.76558 0.967256 5.21873 0.967256 3.46871C0.967256 2.53123 1.19057 1.67186 1.58145 0.921852C3.80101 3.98435 7.13733 5.98432 10.8784 6.2031C10.8086 5.8281 10.7667 5.43752 10.7667 5.04688C10.7667 2.2656 12.7769 0 15.2756 0C16.5739 0 17.7464 0.609373 18.5701 1.59375C19.5891 1.37501 20.5662 0.953114 21.4318 0.375003C21.0967 1.5469 20.3848 2.53128 19.4495 3.15624C20.3569 3.04691 21.2363 2.7656 22.046 2.37502C21.4318 3.37498 20.664 4.26557 19.7846 4.98436Z"
+											fill="#53D1E2"
+										/>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
+								>
+									<svg
+										width="12"
+										height="20"
+										viewBox="0 0 12 20"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M10.3251 11.25L10.8955 7.63047H7.32902V5.28164C7.32902 4.29141 7.82723 3.32617 9.42456 3.32617H11.046V0.244531C11.046 0.244531 9.57459 0 8.1678 0C5.23067 0 3.31082 1.73359 3.31082 4.87187V7.63047H0.0459595V11.25H3.31082V20H7.32902V11.25H10.3251Z"
+											fill="#4391DA"
+										/>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
+								>
+									<svg
+										width="23"
+										height="21"
+										viewBox="0 0 23 21"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M18.7509 3.05156C16.6933 1.08281 13.9531 0 11.041 0C5.03033 0 0.139263 4.66875 0.139263 10.4062C0.139263 12.2391 0.640156 14.0297 1.59283 15.6094L0.0459595 21L5.82587 19.5516C7.41694 20.3813 9.20935 20.8172 11.0361 20.8172H11.041C17.0469 20.8172 22.046 16.1484 22.046 10.4109C22.046 7.63125 20.8085 5.02031 18.7509 3.05156ZM11.041 19.0641C9.41069 19.0641 7.81471 18.6469 6.42498 17.8594L6.09596 17.6719L2.66828 18.5297L3.58167 15.3375L3.3656 15.0094C2.45712 13.6313 1.98078 12.0422 1.98078 10.4062C1.98078 5.63906 6.04685 1.75781 11.046 1.75781C13.4669 1.75781 15.7406 2.65781 17.4495 4.29375C19.1585 5.92969 20.2094 8.1 20.2044 10.4109C20.2044 15.1828 16.0352 19.0641 11.041 19.0641ZM16.0107 12.5859C15.7406 12.4547 14.4 11.8266 14.1495 11.7422C13.8991 11.6531 13.7174 11.6109 13.5357 11.8734C13.354 12.1359 12.8335 12.7172 12.6714 12.8953C12.5143 13.0688 12.3522 13.0922 12.0821 12.9609C10.4812 12.1969 9.43034 11.5969 8.37453 9.86719C8.09462 9.40781 8.65444 9.44063 9.17498 8.44687C9.26337 8.27344 9.21917 8.12344 9.15042 7.99219C9.08167 7.86094 8.53658 6.58125 8.31069 6.06094C8.08971 5.55469 7.86382 5.625 7.69685 5.61563C7.53971 5.60625 7.35801 5.60625 7.17632 5.60625C6.99462 5.60625 6.69998 5.67188 6.44953 5.92969C6.19908 6.19219 5.49685 6.82031 5.49685 8.1C5.49685 9.37969 6.47408 10.6172 6.60667 10.7906C6.74417 10.9641 8.52676 13.5891 11.262 14.7188C12.9906 15.4312 13.6683 15.4922 14.5326 15.3703C15.058 15.2953 16.1433 14.7422 16.3692 14.1328C16.5951 13.5234 16.5951 13.0031 16.5263 12.8953C16.4625 12.7781 16.2808 12.7125 16.0107 12.5859Z"
+											fill="#3AB137"
+										/>
+									</svg>
+								</a>
+								<a
+									href="#"
+									class="text-decoration-none shareBox rounded-12px d-flex justify-content-center align-items-center"
+								>
+									<svg
+										width="20"
+										height="17"
+										viewBox="0 0 20 17"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M12.1663 6.15557C14.3835 8.14141 14.3531 11.3252 12.1797 13.2806C12.1756 13.2846 12.1708 13.2889 12.1663 13.2929L9.6726 15.5241C7.47312 17.4921 3.8947 17.4918 1.69556 15.5241C-0.503909 13.5565 -0.503909 10.3544 1.69556 8.38681L3.07255 7.15478C3.4377 6.82806 4.06656 7.04521 4.08541 7.50693C4.10946 8.09536 4.22739 8.68653 4.445 9.25743C4.5187 9.45074 4.46604 9.66456 4.30461 9.809L3.81896 10.2435C2.77894 11.1741 2.74632 12.6893 3.7761 13.6289C4.81606 14.5778 6.52539 14.5835 7.57332 13.6458L10.0671 11.4149C11.1132 10.4789 11.1088 8.96597 10.0671 8.03386C9.92973 7.91121 9.79138 7.81592 9.68332 7.74935C9.60687 7.70237 9.54375 7.64007 9.49899 7.5674C9.45423 7.49473 9.42907 7.4137 9.42552 7.33079C9.41083 6.97993 9.54976 6.61838 9.85963 6.34114L10.6409 5.64205C10.8458 5.45873 11.1672 5.43622 11.4048 5.58457C11.6769 5.75456 11.9317 5.94562 12.1663 6.15557ZM17.3964 1.47586C15.1972 -0.49182 11.6188 -0.492086 9.41933 1.47586L6.92557 3.70711C6.92112 3.71109 6.9163 3.71541 6.91222 3.71939C4.73887 5.67478 4.7084 8.85859 6.92557 10.8444C7.16021 11.0544 7.41503 11.2454 7.6871 11.4154C7.92467 11.5637 8.24611 11.5412 8.45096 11.3579L9.23226 10.6588C9.54212 10.3816 9.68106 10.02 9.66636 9.66918C9.66281 9.58627 9.63765 9.50524 9.59289 9.43257C9.54813 9.3599 9.48501 9.29759 9.40856 9.25062C9.3005 9.18405 9.16216 9.08876 9.02482 8.9661C7.98304 8.03399 7.97866 6.52106 9.02482 5.58504L11.5186 3.35412C12.5665 2.4165 14.2758 2.42215 15.3158 3.37106C16.3456 4.3107 16.313 5.82589 15.2729 6.75644L14.7873 7.19097C14.6258 7.3354 14.5732 7.54923 14.6469 7.74254C14.8645 8.31343 14.9824 8.90461 15.0065 9.49304C15.0254 9.95476 15.6542 10.1719 16.0193 9.84519L17.3963 8.61316C19.5958 6.64558 19.5958 3.44347 17.3964 1.47586Z"
+											fill="#FB2E86"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="col-12 col-xl-6">
+					<div class="col-12 col-xl-6 mt-50 mt-xl-0" data-aos="fade-left">
 						<p class="text-gray-800 fs-18px mb-2">SKU 12314124124</p>
 						<h1 class="text-black fs-20px fw-semibold mb-30">
 							OMEN Monitor With High Quality In The World
@@ -459,7 +627,9 @@
 						<p class="fw-semibold text-black fs-18px mb-15">Screen Size</p>
 						<form>
 							<div class="options">
-								<div class="optionOne d-flex flex-wrap gap-25">
+								<div
+									class="optionOne d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start gap-25"
+								>
 									<div class="form-check">
 										<input
 											hidden
@@ -565,6 +735,7 @@
 			</section>
 			<section class="productreviews container containerEdit mx-auto mt-80">
 				<div
+					data-aos="fade-up"
 					class="productreviews__title rounded-10px d-flex align-items-center position-relative mb-60"
 				>
 					<div class="bg-primary productreviews__title--side"></div>
@@ -574,6 +745,7 @@
 				</div>
 				<div class="d-flex flex-wrap gap-20 gap-lg-50">
 					<div
+						data-aos="fade-right"
 						class="productreviews__result d-flex flex-column justify-content-center align-items-center border border-12 border-warning rounded-circle"
 					>
 						<p class="mb-0 fw-medium text-black fs-66px mt-n15">4.6</p>
@@ -583,7 +755,7 @@
 							(139 Reviews)
 						</p>
 					</div>
-					<div>
+					<div data-aos="fade-left" data-aos-delay="300">
 						<div class="mb-25">
 							<svg
 								width="30"
@@ -767,6 +939,7 @@
 							tabindex="0"
 						>
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -849,6 +1022,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -931,6 +1105,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1013,6 +1188,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1102,6 +1278,7 @@
 							tabindex="0"
 						>
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1184,6 +1361,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1282,6 +1460,7 @@
 							tabindex="0"
 						>
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1371,6 +1550,7 @@
 							tabindex="0"
 						>
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1453,6 +1633,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1542,6 +1723,7 @@
 							tabindex="0"
 						>
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1624,6 +1806,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1706,6 +1889,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1788,6 +1972,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1877,6 +2062,7 @@
 							tabindex="0"
 						>
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -1959,6 +2145,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -2041,6 +2228,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -2123,6 +2311,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -2212,6 +2401,7 @@
 							tabindex="0"
 						>
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -2294,6 +2484,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -2376,6 +2567,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -2458,6 +2650,7 @@
 							</div>
 							<hr class="dropdown-divider h-1px bg-gray-200 my-40" />
 							<div
+								data-aos="fade-up"
 								class="reviewBox d-flex flex-column flex-md-row gap-15 gap-md-0"
 							>
 								<img
@@ -2551,8 +2744,10 @@
 				</div>
 			</section>
 			<section class="relatedProduct container containerEdit mx-auto mt-100">
-				<p class="text-black fs-20px fw-bold mb-40">Related Products</p>
-				<div class="row">
+				<p class="text-black fs-20px fw-bold mb-40" data-aos="fade-up">
+					Related Products
+				</p>
+				<div class="row" data-aos="fade-up">
 					<div class="col-12 col-lg-6 mb-30">
 						<div
 							class="relatedBox d-flex flex-column align-items-center align-items-sm-start flex-sm-row gap-25"
@@ -2776,7 +2971,7 @@
 				</div>
 			</section>
 			<section
-				class="features container containerEdit mx-auto mt-150 position-relative"
+				class="features container containerEdit mx-auto mt-150 position-relative" data-aos="fade-up"
 			>
 				<div class="swiper featuresSwiper">
 					<div class="swiper-wrapper pt-30 justify-content-lg-center">
@@ -2909,7 +3104,7 @@
 					</div>
 				</div>
 			</section>
-			<section
+			<section data-aos="fade-up"
 				class="partners container containerEdit mx-auto mt-150 position-relative"
 			>
 				<div class="swiper partnersSwiper mx-auto">
@@ -3341,9 +3536,155 @@
 					</div>
 				</div>
 				<div class="swiper-button-next partnersSwiper__next"></div>
-				<div class="swiper-button-prev partnersSwiper__prev"></div>			
+				<div class="swiper-button-prev partnersSwiper__prev"></div>
 			</section>
 		</main>
+
+		<footer class="bg-secondary mt-210">
+			<div class="subscriptions container containerEdit mx-auto pt-90">
+				<div
+					class="rounded-12px py-30 px-40 bg-primary d-flex flex-column flex-md-row gap-20 gap-md-0 align-items-md-center justify-content-md-between"
+				>
+					<div>
+						<p class="text-white fs-16px fw-medium mb-0">Newsletter</p>
+						<p class="text-white fs-16px mb-0 opacity-75">
+							Be the first one to know about discounts, offers and events
+						</p>
+					</div>
+					<form class="subscriptionsForm">
+						<div class="form-floating mb-0 position-relative">
+							<input
+								required
+								type="email"
+								class="form-control"
+								id="subscriptions-email"
+								placeholder="Enter your email"
+							/>
+							<label for="subscriptions-email" class="fs-16px text-black"
+								>Email address</label
+							>
+							<button
+								type="submit"
+								class="btn btn-primary position-absolute end-0 top-50 translate-middle-y fs-16px rounded-8px me-5 btn-sm text-capitalize"
+							>
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="lists mt-60 container containerEdit mx-auto">
+				<div class="row">
+					<div
+						class="col-6 col-sm-4 col-md-6 col-lg-2 d-flex flex-column align-items-center align-items-lg-start mb-20 mb-lg-0"
+					>
+						<p class="text-black fs-16px mb-25 fw-bold">About</p>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">About us</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Blog</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Careers</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Jobs</a>
+						<a class="text-decoration-none mb-0 fs-16px" href="#">In Press</a>
+					</div>
+					<div
+						class="col-6 col-sm-4 col-md-6 col-lg-2 d-flex flex-column align-items-center align-items-lg-start mb-20 mb-lg-0"
+					>
+						<p class="text-black fs-16px mb-25 fw-bold">Support</p>
+						<a class="text-decoration-none mb-20 fs-16px" href="#"
+							>Contact us</a
+						>
+						<a class="text-decoration-none mb-20 fs-16px" href="#"
+							>Online Chat</a
+						>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Whatsapp</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Telegram</a>
+						<a class="text-decoration-none mb-0 fs-16px" href="#">Ticketing</a>
+					</div>
+					<div
+						class="col-6 col-sm-4 col-md-6 col-lg-2 d-flex flex-column align-items-center align-items-lg-start mb-20 mb-lg-0"
+					>
+						<p class="text-black fs-16px mb-25 fw-bold">FAQ</p>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Account</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#"
+							>Manage Deliveries</a
+						>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Orders</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Payments</a>
+						<a class="text-decoration-none mb-0 fs-16px" href="#">Returns</a>
+					</div>
+					<div
+						class="col-6 col-sm-4 col-md-6 col-lg-2 d-flex flex-column align-items-center align-items-lg-start mb-20 mb-lg-0"
+					>
+						<p class="text-black fs-16px mb-25 fw-bold">About</p>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">About us</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Blog</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Careers</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Jobs</a>
+						<a class="text-decoration-none mb-0 fs-16px" href="#">In Press</a>
+					</div>
+					<div
+						class="col-6 col-sm-4 col-md-6 col-lg-2 d-flex flex-column align-items-center align-items-lg-start mb-20 mb-lg-0"
+					>
+						<p class="text-black fs-16px mb-25 fw-bold">Support</p>
+						<a class="text-decoration-none mb-20 fs-16px" href="#"
+							>Contact us</a
+						>
+						<a class="text-decoration-none mb-20 fs-16px" href="#"
+							>Online Chat</a
+						>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Whatsapp</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Telegram</a>
+						<a class="text-decoration-none mb-0 fs-16px" href="#">Ticketing</a>
+					</div>
+					<div
+						class="col-6 col-sm-4 col-md-6 col-lg-2 d-flex flex-column align-items-center align-items-lg-start mb-20 mb-lg-0"
+					>
+						<p class="text-black fs-16px mb-25 fw-bold">FAQ</p>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Account</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#"
+							>Manage Deliveries</a
+						>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Orders</a>
+						<a class="text-decoration-none mb-20 fs-16px" href="#">Payments</a>
+						<a class="text-decoration-none mb-0 fs-16px" href="#">Returns</a>
+					</div>
+				</div>
+			</div>
+			<hr class="dropdown-divider h-1px bg-gray-200 mb-25 mt-60" />
+			<div
+				class="rights container containerEdit mx-auto d-flex flex-column flex-lg-row align-items-center gap-20 gap-lg-0 justify-content-md-between pb-120"
+			>
+				<div class="d-flex flex-column flex-md-row gap-40">
+					<a
+						class="text-decoration-none mb-0 fs-16px text-center text-lg-start"
+						href="#"
+						>About us</a
+					>
+					<a
+						class="text-decoration-none mb-0 fs-16px text-center text-lg-start"
+						href="#"
+						>Contact</a
+					>
+					<a
+						class="text-decoration-none mb-0 fs-16px text-center text-lg-start"
+						href="#"
+						>Privacy policy</a
+					>
+					<a
+						class="text-decoration-none mb-0 fs-16px text-center text-lg-start"
+						href="#"
+						>Sitemap</a
+					>
+					<a
+						class="text-decoration-none mb-0 fs-16px text-center text-lg-start"
+						href="#"
+						>Terms of Use</a
+					>
+				</div>
+				<p class="text-decoration-none mb-0 fs-16px footerRights">
+					© 2000-2023, All Rights Reserved
+				</p>
+			</div>
+		</footer>
 
 		<!-- Searching Modal -->
 		<div
@@ -3492,9 +3833,9 @@
 					disableOnInteraction: false,
 				},
 				navigation: {
-        nextEl: ".partnersSwiper__next",
-        prevEl: ".partnersSwiper__prev",
-      },
+					nextEl: ".partnersSwiper__next",
+					prevEl: ".partnersSwiper__prev",
+				},
 				grabCursor: true,
 				slidesPerView: "auto",
 				spaceBetween: 20,
@@ -3505,6 +3846,25 @@
 					992: {
 						spaceBetween: 80,
 					},
+				},
+			});
+			const productMainThumbsSwiper = new Swiper(".productMainThumbsSwiper", {
+				loop: true,
+				grabCursor: true,
+				spaceBetween: 10,
+				slidesPerView: 4,
+				freeMode: true,
+				direction: "vertical",
+				watchSlidesProgress: true,
+			});
+			const productMainSwiper = new Swiper(".productMainSwiper", {
+				grabCursor: true,
+				thumbs: {
+					swiper: productMainThumbsSwiper,
+				},
+				navigation: {
+					nextEl: ".productMainSwiper__next",
+					prevEl: ".productMainSwiper__prev",
 				},
 			});
 		</script>

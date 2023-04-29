@@ -1,6 +1,5 @@
 body {
 	overflow-x: hidden;
-	height: 8000px;
 }
 .mainContent {
 	min-height: 100vh;
@@ -57,6 +56,9 @@ body {
 }
 .rounded-9px {
 	border-radius: 9px !important;
+}
+.rounded-8px {
+	border-radius: 8px !important;
 }
 .rounded-10px {
 	border-radius: 10px !important;
