@@ -49,3 +49,44 @@
 @import "../components/partners";
 @import "../components/productreviews";
 @import "../components/relatedProduct";
+
+// Styling
+.subscriptions {
+	.subscriptionsForm {
+		@media (min-width: 992px) {
+			min-width: 457px;
+		}
+	}
+}
+
+footer {
+	a,
+	.footerRights {
+		color: #4b5768 !important;
+	}
+}
+
+.productMainThumbsSwiper {
+	height: 20%;
+	box-sizing: border-box;
+	padding: 10px 0;
+}
+
+.productMainThumbsSwiper .swiper-slide {
+	width: 25%;
+	height: 100%;
+	opacity: 0.4;
+}
+
+.productMainThumbsSwiper .swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+.productMainThumbsSwiper {
+	.swiper-slide {
+		border: 1px solid transparent;
+	}
+	.swiper-slide-thumb-active {
+		border: 1px solid $primary;
+	}
+}
